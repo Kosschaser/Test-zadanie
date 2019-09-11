@@ -1,0 +1,27 @@
+{
+  "name": "designtemplate-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kosschaser/designTemplate-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kosschaser/designTemplate-practice/issues"
+  },
+  "homepage": "https://github.com/Kosschaser/designTemplate-practice#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

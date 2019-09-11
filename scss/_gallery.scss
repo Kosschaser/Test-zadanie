@@ -1,0 +1,101 @@
+.gallery{
+	&__bg{
+		background-repeat: no-repeat;
+		background-image: url(src/img/product_big.png), url(src/img/background.png);
+		background-position: -60px 120px, 0px 300px;
+	}
+	&__header{
+		font-size: 3em;
+		text-align: center;
+		font-family: 'PT Sans Narrow', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	&__wrapper{
+		margin: 2em 0 4em 0;
+	}
+	&__container{
+		width: 70%;
+		margin-left: auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 15px 20px;
+	}
+}
+.card{
+	border-radius: 12px;
+	background-color: #fff;
+	&__image{
+		width: 100%;
+		height: auto;
+		border-radius: 12px 12px 0 0;
+	}
+	&__text{
+		font-family: 'PT Sans', sans-serif;
+		font-weight: 800;
+		padding: 1em 0.5em;
+		text-align: center;
+	}
+}
+.doctor{
+	background-color: #fff;
+	border-radius: 12px;
+	margin-bottom: 2em;
+	font-family: 'PT Sans', sans-serif;
+	background-image: url(src/img/doc.png), url(src/img/bcg-outdoors.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: contain, auto;
+	&__wrapper{
+		width: 60%;
+		padding: 2em 2.5em;
+		line-height: 1.5;
+		p{
+			margin-bottom: 1em;
+		}
+	}
+	&__header{
+		font-family: 'PT Sans Narrow', sans-serif;
+		text-transform: uppercase;
+		font-size: 3em;
+	}
+	&__signature{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		div{
+			font-weight: bold;
+		}
+	}
+}
+
+@media screen and (max-device-width: 480px){
+	.gallery{
+		&__bg{
+			background-image: none;
+		}
+		&__container{
+			width: 100%;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		}
+	}
+	.doctor{
+		background-image: none;
+		&__wrapper{
+			width: auto;
+			text-align: justify;
+		}
+		&__signature{
+			font-size: 2.5em;
+			justify-content: space-around;
+		}
+		
+	}
+	.card{
+		&__text{
+			font-size: .8em;
+			padding: .6em 0;
+		}
+	}
+}

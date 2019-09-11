@@ -1,0 +1,26 @@
+main{
+	max-width: 1060px;
+	margin: 0 auto;
+}
+body{
+	background-color: #000;
+}
+.f-bold{
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.f-red{
+	color: #fc481a;
+}
+.section-wrapper{
+	max-width: 980px;
+	margin: 0 auto;
+}
+@media only screen and (max-device-width: 480px){
+	body{
+		font-size: 80%;
+	}
+	.section-wrapper{
+		padding: 0 1em;
+	}
+}
